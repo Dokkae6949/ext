@@ -82,7 +82,7 @@ Modify your flake.nix file to include your custom flake.
       inherit pkgs;
 
       home.packages = [
-        ext.packages.${system}.ext
+        ext.packages."${system}".ext
       ];
 
       # or
