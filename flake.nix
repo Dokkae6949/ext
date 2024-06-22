@@ -27,7 +27,7 @@
         ext-script = pkgs.writeScriptBin ext-name ext-src;
       in rec {
         defaultPackage = packages.ext-script;
-        packages.ext-script = pkgs.symlinkJoin {
+        packages.ext = pkgs.symlinkJoin {
           name = ext-name;
           paths = [ ext-script ] ++ ext-buildInputs;
           buildInputs = [ pkgs.makeWrapper ];
