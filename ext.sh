@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function show_help() {
+show_help() {
     echo "Usage: $0 <file>"
     echo "Extract various archive types."
     echo
@@ -9,7 +9,7 @@ function show_help() {
     echo "  *.tbz2, *.tgz, *.zip, *.Z, *.7z"
 }
 
-function extract() {
+extract() {
     if [ -f $1 ]; then
         case $1 in
             *.tar.bz2) tar xjf $1 ;;
