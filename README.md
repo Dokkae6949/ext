@@ -1,11 +1,22 @@
 # ext - Helper Tool for Extracting Multiple Archive Types
 
-`ext` is a simple bash script that helps you extract various archive types such as `.tar.gz`, `.zip`, `.rar`, and more.
+`ext` is a simple bash script that helps you extract various archive types.
 
 ## Features
 
-- Supports multiple archive formats: `.tar.bz2`, `.tar.gz`, `.bz2`, `.rar`, `.gz`, `.tar`, `.tbz2`, `.tgz`, `.zip`, `.Z`, `.7z`
 - Simple and easy to use
+- Supported archive formats:
+  - `.tar.bz2`
+  - `.tar.gz`
+  - `.bz2`
+  - `.rar`
+  - `.gz`
+  - `.tar`
+  - `.tbz2`
+  - `.tgz`
+  - `.zip`
+  - `.Z`
+  - `.7z`
 
 ## Usage
 
