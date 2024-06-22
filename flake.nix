@@ -26,7 +26,7 @@
         ext-src = builtins.readFile ./ext.sh;
         ext-script = pkgs.writeScriptBin ext-name ext-src;
       in rec {
-        defaultPackage = packages.ext-script;
+        defaultPackage = packages.ext;
         packages.ext = pkgs.symlinkJoin {
           name = ext-name;
           paths = [ ext-script ] ++ ext-buildInputs;
